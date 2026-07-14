@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Love Message</title>
+
+
+<style>
+
+
+body {
+
+    margin:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#111827,#1e3a8a);
+
+    font-family:Arial, sans-serif;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+
+
+.circle {
+
+    position:absolute;
+
+    width:20px;
+    height:20px;
+
+    background:white;
+
+    opacity:0.2;
+
+    border-radius:50%;
+
+    animation:float 10s infinite;
+
+}
+
+
+@keyframes float {
+
+
+0% {
+
+transform:translateY(100vh);
+
+}
+
+
+100% {
+
+transform:translateY(-100vh);
+
+}
+
+}
+
+
+
+
+.container {
+
+
+background:rgba(255,255,255,0.1);
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 0 30px black;
+
+
+}
+
+
+
+
+h1 {
+
+font-size:45px;
+
+animation:bounce 2s infinite;
+
+}
+
+
+
+@keyframes bounce {
+
+
+0%,100% {
+
+transform:translateY(0);
+
+}
+
+
+50% {
+
+transform:translateY(-15px);
+
+}
+
+
+}
+
+
+
+
+input {
+
+
+padding:12px;
+
+font-size:18px;
+
+border-radius:10px;
+
+border:none;
+
+}
+
+
+
+button {
+
+
+padding:12px 25px;
+
+font-size:18px;
+
+border-radius:10px;
+
+border:none;
+
+cursor:pointer;
+
+background:#22c55e;
+
+color:white;
+
+}
+
+
+
+
+#secret {
+
+
+display:none;
+
+animation:appear 2s;
+
+
+}
+
+
+
+@keyframes appear {
+
+
+from {
+
+opacity:0;
+
+transform:scale(0.5);
+
+}
+
+
+to {
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+
+}
+
+
+
+#error {
+
+
+color:#ffaaaa;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="circle" style="left:10%;animation-delay:0s;"></div>
+
+<div class="circle" style="left:30%;animation-delay:2s;"></div>
+
+<div class="circle" style="left:50%;animation-delay:4s;"></div>
+
+<div class="circle" style="left:70%;animation-delay:1s;"></div>
+
+<div class="circle" style="left:90%;animation-delay:3s;"></div>
+
+
+
+<div class="container">
+
+
+<div id="login">
+
+
+<h2>🔒 Secret Area</h2>
+
+
+<p>
+Enter password to unlock
+</p>
+
+
+<input 
+type="password"
+id="password"
+placeholder="Password">
+
+
+<br><br>
+
+
+<button onclick="unlock()">
+Unlock
+</button>
+
+
+<p id="error"></p>
+
+
+</div>
+
+
+
+<div id="secret">
+
+
+<h1>
+❤️ Heyyyyy Beautiful ❤️
+</h1>
+
+
+<h2>
+Your Husband here 👋, I just wanted to make this secret page for you my love!❤️!
+</h2>
+
+
+<p>
+Hello baby ❤️
+
+I just wanted to make this page for you and only you to access. Sometimes I’ll randomly update it, and you’ll be able to see what’s new, what ideas I have, or anything else I want to add.
+
+It’s pretty bare-bones code for now, but I’ll be using this to test and improve my skills with HTML and JavaScript (trying to get better at it just in case I need it in the future). But more importantly, I wanted to have a place where I can come and tell you how much I love you and how happy I am that you’re in my life.
+
+We’ve been dating for <h2 id="counter"></h2>, and every single day feels more magical than the last. You are so special to me, and words can’t fully explain how much you mean to me.
+
+I love how much you love me and how much you care about me. You always push me to become better and encourage me when I’m feeling down. I also love that you are always honest with me and never fake how you feel, even when it’s difficult to say. I want you to always keep doing that with me because it means so much. I want us to always be able to communicate and be ourselves with each other.
+
+I want us forever. You are my biggest wish in life. Everything else is just a bonus. My biggest goal is to be with you, cherish you, and create a life together. So please let me do that.
+
+Thank you for being you, my love.
+
+I LOVE YOU SOOOO MUCH ❤️
+
+Also, I wanted to talk about earlier today because I know when I said I can’t eat around you, it may have sounded like I’m still uncomfortable being around you, but that is the furthest thing from the truth. I’m sorry I didn’t explain it properly before.
+
+What I was trying to say is that sometimes I get so excited being with you that I end up wanting to spend every second talking to you or doing something together. Eating feels like something that takes time away from being able to focus on you, even though I know it’s important and I’m not forgetting that I need to take care of myself hahaha.
+
+But that doesn’t mean I don’t want to have meals with you. If I could have dinner with anyone in the world, I would always choose you. You make meals better just by being there. The quality time we spend together means the world to me.
+
+I love our conversations, and honestly, those moments with you are some of my favourite memories. What I was trying to explain is that I get so excited to be with you that sometimes my brain switches from “eat” to “I want to talk to you and spend time with you.”
+
+I’m sorry if I came across as rude or made it seem like I don’t want to have dinners with you, because that is not what I meant at all. I was trying to express how much I love spending time with you and how much I appreciate you.
+
+I love you ❤️
+
+Love, Sagan
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<script>
+const startDate = new Date("2026-05-12T00:15:00");
+
+function updateCounter() {
+
+    const now = new Date();
+
+    const difference = now - startDate;
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
+
+    const seconds = Math.floor((difference / 1000) % 60);
+
+
+    document.getElementById("counter").innerHTML =
+    "❤️ We have been together for:<br>" +
+    days + " days, " +
+    hours + " hours, " +
+    minutes + " minutes, " +
+    seconds + " seconds ❤️";
+
+}
+
+setInterval(updateCounter, 1000);
+
+updateCounter();
+
+function unlock(){
+
+
+let password =
+document.getElementById("password").value;
+
+
+
+let correctPassword="2026-05-12";
+
+
+
+if(password === correctPassword){
+
+
+document.getElementById("login").style.display="none";
+
+
+document.getElementById("secret").style.display="block";
+
+
+
+}
+
+else{
+
+
+document.getElementById("error").innerHTML=
+"❌ Incorrect password";
+
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
