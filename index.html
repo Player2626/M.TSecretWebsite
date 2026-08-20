@@ -4,437 +4,980 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Love Message</title>
-
+<title>For My Love ❤️</title>
 
 <style>
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
 
-    margin:0;
+    margin: 0;
 
-    min-height:100vh;
+    min-height: 100vh;
 
-    display:flex;
+    padding: 15px;
 
-    justify-content:center;
+    display: flex;
 
-    align-items:flex-start;
+    justify-content: center;
 
-    background:linear-gradient(135deg,#111827,#1e3a8a);
+    align-items: flex-start;
 
-    font-family:Arial, sans-serif;
+    overflow-x: hidden;
 
-    color:white;
+    overflow-y: auto;
 
-    overflow-x:hidden;
+    font-family: Arial, sans-serif;
 
-    overflow-y:auto;
+    color: white;
 
-    padding:20px;
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #7f1d1d,
+            #1e3a8a
+        );
 
-    box-sizing:border-box;
+    background-size: 300% 300%;
 
-}
-
-
-.circle {
-
-    position:absolute;
-
-    width:20px;
-    height:20px;
-
-    background:white;
-
-    opacity:0.2;
-
-    border-radius:50%;
-
-    animation:float 10s infinite;
+    animation: backgroundMove 12s infinite alternate;
 
 }
 
+@keyframes backgroundMove {
 
-@keyframes float {
+    0% {
+        background-position: 0% 50%;
+    }
 
-
-0% {
-
-transform:translateY(100vh);
-
-}
-
-
-100% {
-
-transform:translateY(-100vh);
+    100% {
+        background-position: 100% 50%;
+    }
 
 }
-
-}
-
-
 
 
 .container {
 
-    width:100%;
+    width: 100%;
 
-    max-width:700px;
+    max-width: 750px;
 
-    background:rgba(255,255,255,0.1);
+    margin: 20px auto;
 
-    padding:30px;
+    padding: 30px;
 
-    border-radius:20px;
+    background: rgba(255,255,255,0.12);
 
-    text-align:center;
+    border-radius: 25px;
 
-    backdrop-filter:blur(10px);
+    backdrop-filter: blur(12px);
 
-    box-shadow:0 0 30px black;
+    -webkit-backdrop-filter: blur(12px);
 
-    box-sizing:border-box;
+    text-align: center;
 
-    margin-top:20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
 
-}
+    position: relative;
 
-
-
-
-h1 {
-
-font-size:clamp(30px,8vw,45px);
-
-animation:bounce 2s infinite;
+    z-index: 5;
 
 }
 
 
+#login {
 
-@keyframes bounce {
-
-
-0%,100% {
-
-transform:translateY(0);
+    padding: 20px 5px;
 
 }
 
 
-50% {
+#login h2 {
 
-transform:translateY(-15px);
-
-}
-
+    font-size: clamp(25px, 7vw, 35px);
 
 }
-
-
 
 
 input {
 
-    width:90%;
+    width: 90%;
 
-    max-width:350px;
+    max-width: 350px;
 
-    padding:12px;
+    padding: 13px;
 
-    font-size:18px;
+    font-size: 18px;
 
-    border-radius:10px;
+    border: none;
 
-    border:none;
+    border-radius: 10px;
+
+    outline: none;
+
+    text-align: center;
 
 }
-
 
 
 button {
 
-    padding:12px 25px;
+    padding: 13px 25px;
 
-    font-size:18px;
+    margin-top: 12px;
 
-    border-radius:10px;
+    border: none;
 
-    border:none;
+    border-radius: 10px;
 
-    cursor:pointer;
+    font-size: 18px;
 
-    background:#22c55e;
+    cursor: pointer;
 
-    color:white;
+    background: #22c55e;
 
-    margin-top:10px;
+    color: white;
 
-}
-
-
-
-
-#secret {
-
-
-display:none;
-
-animation:appear 2s;
-
+    transition: transform 0.2s;
 
 }
 
 
+button:hover {
 
-@keyframes appear {
-
-
-from {
-
-opacity:0;
-
-transform:scale(0.5);
+    transform: scale(1.05);
 
 }
-
-
-to {
-
-opacity:1;
-
-transform:scale(1);
-
-}
-
-
-}
-
 
 
 #error {
 
-
-color:#ffaaaa;
+    color: #ffaaaa;
 
 }
-@media(max-width:600px){
 
-    body{
 
-        padding:10px;
+#secret {
+
+    display: none;
+
+    animation: appear 2s;
+
+}
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.5);
 
     }
 
+    to {
 
-    .container{
+        opacity: 1;
 
-        padding:20px;
-
-    }
-
-
-    h2{
-
-        font-size:22px;
-
-    }
-
-
-    p{
-
-        font-size:16px;
-
-        line-height:1.6;
+        transform: scale(1);
 
     }
 
 }
 
+
+.big-heart {
+
+    font-size: clamp(80px, 25vw, 150px);
+
+    animation: heartbeat 1.5s infinite;
+
+    margin: 10px;
+
+}
+
+
+@keyframes heartbeat {
+
+    0%, 100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+}
+
+
+h1 {
+
+    font-size: clamp(30px, 8vw, 50px);
+
+}
+
+
+h2 {
+
+    font-size: clamp(22px, 6vw, 32px);
+
+}
+
+
+#counter {
+
+    font-size: clamp(18px, 5vw, 25px);
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    margin: 20px 0;
+
+}
+
+
+#loveGame {
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    min-height: 350px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+#loveQuestion {
+
+    font-size: clamp(24px, 7vw, 36px);
+
+    margin-bottom: 30px;
+
+}
+
+
+#loveButton {
+
+    background: #ff4d6d;
+
+    position: relative;
+
+    z-index: 10;
+
+}
+
+
+#loveButton:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+#loveResult {
+
+    display: none;
+
+    animation: resultAppear 2s;
+
+}
+
+
+@keyframes resultAppear {
+
+    0% {
+
+        opacity: 0;
+
+        transform: scale(0.5);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+.distance {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.1);
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+}
+
+
+.heart,
+.petal {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+}
+
+
+.heart {
+
+    bottom: -50px;
+
+    animation: heartFloat linear forwards;
+
+}
+
+
+@keyframes heartFloat {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-120vh)
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+.petal {
+
+    top: -50px;
+
+    animation: petalFall linear forwards;
+
+}
+
+
+@keyframes petalFall {
+
+    0% {
+
+        transform:
+            translateY(-50px)
+            rotate(0deg);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(120vh)
+            translateX(100px)
+            rotate(540deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    body {
+
+        padding: 8px;
+
+    }
+
+    .container {
+
+        padding: 20px 15px;
+
+        margin-top: 10px;
+
+    }
+
+    #loveGame {
+
+        min-height: 350px;
+
+    }
+
+}
 
 </style>
 
 </head>
 
 
-
 <body>
-
-
-
-<div class="circle" style="left:10%;animation-delay:0s;"></div>
-
-<div class="circle" style="left:30%;animation-delay:2s;"></div>
-
-<div class="circle" style="left:50%;animation-delay:4s;"></div>
-
-<div class="circle" style="left:70%;animation-delay:1s;"></div>
-
-<div class="circle" style="left:90%;animation-delay:3s;"></div>
-
 
 
 <div class="container">
 
 
+
+
 <div id="login">
 
+    <h2>🔒 Secret Area ❤️</h2>
 
-<h2>🔒 Secret Area</h2>
+    <p>
+        This page is only for Melanie.
+    </p>
 
+    <p>
+        Enter the password to unlock it.
+    </p>
 
-<p>
-Enter password to unlock
-</p>
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+    >
 
+    <br>
 
-<input 
-type="password"
-id="password"
-placeholder="Password">
+    <button onclick="unlock()">
+        Unlock ❤️
+    </button>
 
-
-<br><br>
-
-
-<button onclick="unlock()">
-Unlock
-</button>
-
-
-<p id="error"></p>
-
+    <p id="error"></p>
 
 </div>
+
 
 
 
 <div id="secret">
 
 
-<h1>
-❤️ Heyyyyy Beautiful ❤️
-</h1>
+    <div class="big-heart">
+        ❤️
+    </div>
 
 
-<h2>
-Your Husband here 👋, This is my secret page for you, my love!❤️
-</h2>
+    <h1>
+        Heyyyyy Beautiful ❤️
+    </h1>
+
+
+    <h2>
+        Your Husband here 👋
+    </h2>
+
+
+    <p>
+        I made this little page just for you.
+    </p>
+
+
+    
+
+    <h3>
+        We've been together for:
+    </h3>
+
+
+    <div id="counter"></div>
 
 
 
-<p>
-Hello, my wonderful, beautiful, amazing, caring, and perfect Woman!❤️
 
-Thank you for being by my side ever since I started talking with you again. It has honestly been such a wonderful journey, and you have truly been my rock throughout the summer, school, and just life in general. Every single day, I find myself falling more deeply in love with you.
+    <div id="loveGame">
 
-You are genuinely perfect for me, and I am so grateful for you every single day. You always reassure me and comfort me whenever I’m feeling down. You always teach me new things, and you never judge me, clown me, or make me feel less knowledgeable while helping me learn. That means so much to me because you always make me feel supported and respected.
+        <div id="loveQuestion">
 
-You are one of the most caring people I have ever met. You always consider other people’s feelings, including mine, when talking to me or giving advice. You are always genuine and never fake with anyone, and that is one of the many things I love about you.
+            💕 Do you love me? 💕
 
-Throughout the wonderful time we have been together, we have been together for:
+        </div>
 
-<h2 id="counter"></h2>
 
-Every second, minute, hour, and day with you has been something I will always cherish. You have truly become such an important part of my life, and you have been there for me in every way possible. You have supported me, cared for me, and loved me in ways I could never fully explain.
+        <button
+            id="loveButton"
+            onclick="loveClicked()"
+        >
 
-I just want you to know that I never want you to leave me or give up on us because I want this forever and ever. I want us to continue growing together, learning together, and building a beautiful life together.
+            Click if you love me ❤️
 
-I will always want to work on things with you, adapt with you, and overcome anything that comes our way because baby, I NEED YOU. Please never think otherwise.
+        </button>
 
-Thank you for being you, my love.
+    </div>
 
-I LOVE YOU SOOOO MUCH ❤️
-</p>
+
+
+    
+
+    <div id="loveResult">
+
+
+        <div class="big-heart">
+            ❤️
+        </div>
+
+
+        <h1>
+            WOW, YOU DO LOVE ME! 😭❤️
+        </h1>
+
+
+        <h2>
+            I KNEW IT! 😂💕
+        </h2>
+
+
+        <div class="distance">
+
+            🇨🇦 Ottawa
+
+            <br>
+
+            ⬇️
+
+            <br>
+
+            🇬🇷 Athens, Greece
+
+            <br><br>
+
+            📍 Approximately
+            <strong>7,400 km</strong>
+            apart
+
+            <br><br>
+
+            Even with all this distance between us...
+
+            <br><br>
+
+            <strong>
+                I still love you more. ❤️
+            </strong>
+
+        </div>
+
+
+        <p>
+
+            No matter how many kilometers are between us,
+            you're still the closest person to my heart.
+
+            ❤️
+
+        </p>
+
+
+    </div>
 
 
 </div>
 
 
-
 </div>
-
-
 
 
 
 <script>
-const startDate = new Date("2026-05-12T00:15:00");
+
+
+
+const startDate =
+    new Date("2026-05-12T00:15:00");
+
 
 function updateCounter() {
 
     const now = new Date();
 
-    const difference = now - startDate;
+    const difference =
+        now - startDate;
 
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
 
-    const minutes = Math.floor((difference / (1000 * 60)) % 60);
 
-    const seconds = Math.floor((difference / 1000) % 60);
+    const hours =
+        Math.floor(
+            (difference /
+            (1000 * 60 * 60)) % 24
+        );
+
+
+    const minutes =
+        Math.floor(
+            (difference /
+            (1000 * 60)) % 60
+        );
+
+
+    const seconds =
+        Math.floor(
+            (difference /
+            1000) % 60
+        );
 
 
     document.getElementById("counter").innerHTML =
-    "❤️ We have been together for:<br>" +
-    days + " days, " +
-    hours + " hours, " +
-    minutes + " minutes, " +
-    seconds + " seconds ❤️";
+
+        days +
+        " days, " +
+
+        hours +
+        " hours, " +
+
+        minutes +
+        " minutes, " +
+
+        seconds +
+        " seconds ❤️";
 
 }
+
 
 setInterval(updateCounter, 1000);
 
 updateCounter();
 
-function unlock(){
-
-
-let password =
-document.getElementById("password").value;
 
 
 
-let correctPassword="2026-05-12";
+
+function unlock() {
+
+    const password =
+        document.getElementById("password").value;
 
 
-
-if(password === correctPassword){
-
-
-document.getElementById("login").style.display="none";
+    const correctPassword =
+        "2026-05-12";
 
 
-document.getElementById("secret").style.display="block";
+    if(password === correctPassword) {
+
+        document.getElementById("login")
+            .style.display = "none";
 
 
+        document.getElementById("secret")
+            .style.display = "block";
+
+
+        startAnimations();
+
+    }
+
+    else {
+
+        document.getElementById("error")
+            .innerHTML =
+            "❌ Incorrect password";
+
+    }
 
 }
 
-else{
 
 
-document.getElementById("error").innerHTML=
-"❌ Incorrect password";
 
+
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className = "heart";
+
+
+    const hearts = [
+        "❤️",
+        "💖",
+        "💕",
+        "💗",
+        "💓"
+    ];
+
+
+    heart.innerHTML =
+        hearts[
+            Math.floor(
+                Math.random() *
+                hearts.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+
+    heart.style.fontSize =
+        (20 + Math.random() * 20) + "px";
+
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+
+    document.body.appendChild(heart);
+
+
+    setTimeout(
+        () => heart.remove(),
+        11000
+    );
 
 }
 
 
 
+
+function createPetal() {
+
+    const petal =
+        document.createElement("div");
+
+
+    petal.className = "petal";
+
+
+    petal.innerHTML = "🌹";
+
+
+    petal.style.left =
+        Math.random() * 100 + "vw";
+
+
+    petal.style.fontSize =
+        (20 + Math.random() * 15) + "px";
+
+
+    petal.style.animationDuration =
+        (7 + Math.random() * 5) + "s";
+
+
+    document.body.appendChild(petal);
+
+
+    setTimeout(
+        () => petal.remove(),
+        12000
+    );
+
 }
 
 
+
+
+let animationsStarted = false;
+
+
+function startAnimations() {
+
+    if(animationsStarted)
+        return;
+
+
+    animationsStarted = true;
+
+
+    setInterval(
+        createHeart,
+        700
+    );
+
+
+    setInterval(
+        createPetal,
+        2200
+    );
+
+}
+
+
+
+let attempts = 0;
+
+
+function moveLoveButton() {
+
+    const button =
+        document.getElementById("loveButton");
+
+
+    const game =
+        document.getElementById("loveGame");
+
+
+    attempts++;
+
+
+
+
+    if(attempts >= 6) {
+
+        button.innerHTML =
+            "Okay okay... click me ❤️";
+
+        button.style.position =
+            "relative";
+
+        button.style.left = "auto";
+
+        button.style.top = "auto";
+
+        return;
+
+    }
+
+
+    const maxX =
+        game.clientWidth -
+        button.offsetWidth -
+        10;
+
+
+    const maxY =
+        game.clientHeight -
+        button.offsetHeight -
+        20;
+
+
+    const randomX =
+        Math.random() *
+        Math.max(maxX, 10);
+
+
+    const randomY =
+        Math.random() *
+        Math.max(maxY, 10);
+
+
+    button.style.position =
+        "absolute";
+
+
+    button.style.left =
+        randomX + "px";
+
+
+    button.style.top =
+        randomY + "px";
+
+}
+
+
+
+
+
+document.getElementById(
+    "loveButton"
+).addEventListener(
+    "mouseenter",
+    moveLoveButton
+);
+
+
+
+
+document.getElementById(
+    "loveButton"
+).addEventListener(
+    "touchstart",
+    function(event) {
+
+        if(attempts < 6) {
+
+            event.preventDefault();
+
+            moveLoveButton();
+
+        }
+
+    }
+);
+
+
+
+
+
+function loveClicked() {
+
+    document.getElementById(
+        "loveGame"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "loveResult"
+    ).style.display = "block";
+
+
+    
+
+    for(
+        let i = 0;
+        i < 15;
+        i++
+    ) {
+
+        setTimeout(
+            createHeart,
+            i * 100
+        );
+
+    }
+
+}
 
 </script>
-
 
 </body>
 
