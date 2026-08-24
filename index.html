@@ -5,11 +5,17 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>For My Love ❤️</title>
 
+
 <style>
+
+/* =========================
+   GENERAL
+========================= */
 
 * {
     box-sizing: border-box;
@@ -44,14 +50,15 @@ body {
     background:
         linear-gradient(
             135deg,
-            #111827,
             #7f1d1d,
-            #1e3a8a
+            #991b1b,
+            #450a0a
         );
 
     background-size: 300% 300%;
 
-    animation: backgroundMove 12s infinite alternate;
+    animation:
+        backgroundMove 12s infinite alternate;
 
 }
 
@@ -68,6 +75,10 @@ body {
 }
 
 
+/* =========================
+   MAIN CONTAINER
+========================= */
+
 .container {
 
     width: 100%;
@@ -78,7 +89,8 @@ body {
 
     padding: 30px;
 
-    background: rgba(255,255,255,0.12);
+    background:
+        rgba(255,255,255,0.12);
 
     border-radius: 25px;
 
@@ -88,7 +100,8 @@ body {
 
     text-align: center;
 
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.6);
 
     position: relative;
 
@@ -97,19 +110,22 @@ body {
 }
 
 
+/* =========================
+   LOGIN
+========================= */
+
 #login {
 
     padding: 20px 5px;
 
 }
 
-
 #login h2 {
 
-    font-size: clamp(25px, 7vw, 35px);
+    font-size:
+        clamp(25px, 7vw, 35px);
 
 }
-
 
 input {
 
@@ -150,10 +166,11 @@ button {
 
     color: white;
 
-    transition: transform 0.2s;
+    transition:
+        transform 0.2s,
+        opacity 0.2s;
 
 }
-
 
 button:hover {
 
@@ -169,14 +186,18 @@ button:hover {
 }
 
 
+/* =========================
+   SECRET MAIN PAGE
+========================= */
+
 #secret {
 
     display: none;
 
-    animation: appear 2s;
+    animation:
+        appear 2s;
 
 }
-
 
 @keyframes appear {
 
@@ -199,16 +220,21 @@ button:hover {
 }
 
 
+/* =========================
+   HEART
+========================= */
+
 .big-heart {
 
-    font-size: clamp(80px, 25vw, 150px);
+    font-size:
+        clamp(80px, 25vw, 150px);
 
-    animation: heartbeat 1.5s infinite;
+    animation:
+        heartbeat 1.5s infinite;
 
     margin: 10px;
 
 }
-
 
 @keyframes heartbeat {
 
@@ -227,23 +253,33 @@ button:hover {
 }
 
 
+/* =========================
+   HEADINGS
+========================= */
+
 h1 {
 
-    font-size: clamp(30px, 8vw, 50px);
+    font-size:
+        clamp(30px, 8vw, 50px);
 
 }
-
 
 h2 {
 
-    font-size: clamp(22px, 6vw, 32px);
+    font-size:
+        clamp(22px, 6vw, 32px);
 
 }
 
 
+/* =========================
+   RELATIONSHIP TIMER
+========================= */
+
 #counter {
 
-    font-size: clamp(18px, 5vw, 25px);
+    font-size:
+        clamp(18px, 5vw, 25px);
 
     font-weight: bold;
 
@@ -253,6 +289,110 @@ h2 {
 
 }
 
+
+/* =========================
+   LOCATION BOX
+========================= */
+
+.location-box {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.10);
+
+}
+
+.location-title {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+}
+
+#currentLocation {
+
+    font-size:
+        clamp(24px, 7vw, 34px);
+
+    font-weight: bold;
+
+    margin: 10px 0;
+
+}
+
+#distance {
+
+    font-size:
+        clamp(19px, 5vw, 26px);
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+#locationCountdown {
+
+    font-size: 15px;
+
+    opacity: 0.9;
+
+    margin-top: 12px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================
+   HOME COUNTDOWN
+========================= */
+
+.home-box {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.12);
+
+}
+
+.home-title {
+
+    font-size:
+        clamp(22px, 6vw, 30px);
+
+    font-weight: bold;
+
+}
+
+#homeCountdown {
+
+    font-size:
+        clamp(19px, 5vw, 27px);
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    margin-top: 10px;
+
+}
+
+
+/* =========================
+   LOVE GAME
+========================= */
 
 #loveGame {
 
@@ -268,15 +408,14 @@ h2 {
 
 }
 
-
 #loveQuestion {
 
-    font-size: clamp(24px, 7vw, 36px);
+    font-size:
+        clamp(24px, 7vw, 36px);
 
     margin-bottom: 30px;
 
 }
-
 
 #loveButton {
 
@@ -289,21 +428,18 @@ h2 {
 }
 
 
-#loveButton:hover {
-
-    transform: scale(1.08);
-
-}
-
+/* =========================
+   LOVE RESULT
+========================= */
 
 #loveResult {
 
     display: none;
 
-    animation: resultAppear 2s;
+    animation:
+        resultAppear 2s;
 
 }
-
 
 @keyframes resultAppear {
 
@@ -334,7 +470,8 @@ h2 {
 
     border-radius: 20px;
 
-    background: rgba(255,255,255,0.1);
+    background:
+        rgba(255,255,255,0.1);
 
     font-size: 20px;
 
@@ -342,6 +479,177 @@ h2 {
 
 }
 
+
+/* =========================
+   SECRET PAGE BUTTON
+========================= */
+
+#secretPageButton {
+
+    display: none;
+
+    margin-top: 30px;
+
+    background:
+        #1e40af;
+
+    animation:
+        secretPulse 2s infinite;
+
+}
+
+@keyframes secretPulse {
+
+    0%, 100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.05);
+
+    }
+
+}
+
+
+/* =========================
+   SECRET NAVY PAGE
+========================= */
+
+#hiddenPage {
+
+    display: none;
+
+    min-height: 100vh;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    overflow-y: auto;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #172554
+        );
+
+    animation:
+        hiddenPageAppear 1s;
+
+}
+
+@keyframes hiddenPageAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(1.1);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+.hidden-content {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 60px auto;
+
+    padding: 35px 25px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.7);
+
+    text-align: center;
+
+}
+
+
+.hidden-heart {
+
+    font-size:
+        clamp(70px, 20vw, 130px);
+
+    animation:
+        hiddenHeartBeat 2s infinite;
+
+}
+
+@keyframes hiddenHeartBeat {
+
+    0%, 100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.1);
+
+    }
+
+}
+
+
+.hidden-content h1 {
+
+    font-size:
+        clamp(28px, 8vw, 48px);
+
+}
+
+
+.hidden-content p {
+
+    font-size:
+        clamp(18px, 5vw, 24px);
+
+    line-height: 1.7;
+
+}
+
+
+#getOut {
+
+    margin-top: 30px;
+
+    background:
+        #334155;
+
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
 
 .heart,
 .petal {
@@ -354,15 +662,14 @@ h2 {
 
 }
 
-
 .heart {
 
     bottom: -50px;
 
-    animation: heartFloat linear forwards;
+    animation:
+        heartFloat linear forwards;
 
 }
-
 
 @keyframes heartFloat {
 
@@ -389,14 +696,18 @@ h2 {
 }
 
 
+/* =========================
+   ROSE PETALS
+========================= */
+
 .petal {
 
     top: -50px;
 
-    animation: petalFall linear forwards;
+    animation:
+        petalFall linear forwards;
 
 }
-
 
 @keyframes petalFall {
 
@@ -424,6 +735,10 @@ h2 {
 }
 
 
+/* =========================
+   PHONE
+========================= */
+
 @media(max-width:600px) {
 
     body {
@@ -434,7 +749,8 @@ h2 {
 
     .container {
 
-        padding: 20px 15px;
+        padding:
+            20px 15px;
 
         margin-top: 10px;
 
@@ -456,159 +772,305 @@ h2 {
 <body>
 
 
+<!-- =========================
+     MAIN WEBSITE
+========================= -->
+
 <div class="container">
 
 
+    <!-- PASSWORD -->
 
-<div id="login">
+    <div id="login">
 
-    <h2>🔒 Secret Area ❤️</h2>
+        <h2>
+            🔒 Secret Area ❤️
+        </h2>
 
-    <p>
-        This page is only for Melanie.
-    </p>
+        <p>
+            This page is only for Melanie.
+        </p>
 
-    <p>
-        Enter the password to unlock it.
-    </p>
+        <p>
+            Enter the password to unlock it.
+        </p>
 
-    <input
-        type="password"
-        id="password"
-        placeholder="Password"
-    >
-
-    <br>
-
-    <button onclick="unlock()">
-        Unlock ❤️
-    </button>
-
-    <p id="error"></p>
-
-</div>
-
-
-
-<div id="secret">
-
-
-    <div class="big-heart">
-        ❤️
-    </div>
-
-
-    <h1>
-        Heyyyyy Beautiful ❤️
-    </h1>
-
-
-    <h2>
-        Your Husband here 👋
-    </h2>
-
-
-    <p>
-        I made this little page just for you.
-    </p>
-
-
-
-    <h3>
-        We've been together for:
-    </h3>
-
-
-    <div id="counter"></div>
-
-
-
-
-    <div id="loveGame">
-
-        <div id="loveQuestion">
-
-            💕 Do you love me? 💕
-
-        </div>
-
-
-        <button
-            id="loveButton"
-            onclick="loveClicked()"
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
         >
 
-            Click if you love me ❤️
+        <br>
+
+        <button onclick="unlock()">
+
+            Unlock ❤️
 
         </button>
 
+        <p id="error"></p>
+
     </div>
 
 
 
-    <div id="loveResult">
+    <!-- MAIN CONTENT -->
+
+    <div id="secret">
 
 
         <div class="big-heart">
+
             ❤️
+
         </div>
 
 
         <h1>
-            WOW, YOU DO LOVE ME! 😭❤️
+
+            Heyyyyy Beautiful ❤️
+
         </h1>
 
 
         <h2>
-            I KNEW IT! 😂💕
+
+            Your Husband here 👋
+
         </h2>
-
-
-        <div class="distance">
-
-            🇨🇦 Ottawa
-
-            <br>
-
-            ⬇️
-
-            <br>
-
-            🇬🇷 Greece
-
-            <br><br>
-
-            📍 Approximately
-            <strong>7,400 km</strong>
-            apart
-
-            <br><br>
-
-            Even with all this distance between us...
-
-            <br><br>
-
-            <strong>
-                I still love you more. ❤️
-            </strong>
-
-        </div>
 
 
         <p>
 
-            No matter how many kilometers are between us,
-            you're still the closest person to my heart.
-
-            ❤️
+            I made this little page
+            just for you.
 
         </p>
+
+
+
+        <!-- RELATIONSHIP TIMER -->
+
+        <h3>
+
+            We've been together for:
+
+        </h3>
+
+
+        <div id="counter"></div>
+
+
+
+        <!-- LOCATION -->
+
+        <div class="location-box">
+
+            <div class="location-title">
+
+                📍 My current scheduled location
+
+            </div>
+
+
+            <div id="currentLocation">
+
+                Checking...
+
+            </div>
+
+
+            <div id="distance">
+
+                Calculating distance... ❤️
+
+            </div>
+
+
+            <div id="locationCountdown">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HOME COUNTDOWN -->
+
+        <div class="home-box">
+
+            <div class="home-title">
+
+                🏠 Time until I'm home in your arms ❤️
+
+            </div>
+
+
+            <div id="homeCountdown">
+
+                Calculating...
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LOVE GAME -->
+
+        <div id="loveGame">
+
+            <div id="loveQuestion">
+
+                💕 Do you love me? 💕
+
+            </div>
+
+
+            <button
+                id="loveButton"
+                onclick="loveClicked()"
+            >
+
+                Click if you love me ❤️
+
+            </button>
+
+        </div>
+
+
+
+        <!-- LOVE RESULT -->
+
+        <div id="loveResult">
+
+
+            <div class="big-heart">
+
+                ❤️
+
+            </div>
+
+
+            <h1>
+
+                WOW, YOU DO LOVE ME! 😭❤️
+
+            </h1>
+
+
+            <h2>
+
+                I KNEW IT! 😂💕
+
+            </h2>
+
+
+            <div class="distance">
+
+                No matter how far apart we are,
+
+                <br><br>
+
+                you're always close to my heart. ❤️
+
+            </div>
+
+
+            <p>
+
+                I love you more than all the
+                distance between us. ❤️
+                I want you to know you're perfect in everyway.
+                I'm truly blessed to even be in your life, and i am NEVER leaving!
+                It pains me to not be in your arms right now or us cuddling in bed, 
+                but i'll fill you in on a little reminder. 
+                I LOOOOOOOOOOVVVE YOUUUUUUUUUUU!
+                
+
+            </p>
+
+
+            <!-- SECRET PAGE -->
+
+            <button
+                id="secretPageButton"
+                onclick="openHiddenPage()"
+            >
+
+                🔐 Unlock Something Else 🫣
+
+            </button>
+
+
+        </div>
 
 
     </div>
 
 
 </div>
+
+
+
+<!-- =========================
+     HIDDEN NAVY PAGE
+========================= -->
+
+<div id="hiddenPage">
+
+
+    <div class="hidden-content">
+
+
+        <div class="hidden-heart">
+
+            🫣
+
+        </div>
+
+
+        <h1>
+
+            Hey my princess 🫣❤️
+
+        </h1>
+
+
+        <p>
+
+            You weren't supposed
+            to find this yet...
+
+        </p>
+
+
+        <h2>
+
+            🫣 Surprise coming soon ❤️
+
+        </h2>
+
+
+        <p>
+
+            Get out of here! 😂
+
+        </p>
+
+
+        <button
+            id="getOut"
+            onclick="closeHiddenPage()"
+        >
+
+            GET OUT 🚪😂
+
+        </button>
+
+
+    </div>
 
 
 </div>
@@ -618,6 +1080,9 @@ h2 {
 <script>
 
 
+/* =========================
+   RELATIONSHIP TIMER
+========================= */
 
 const startDate =
     new Date("2026-05-12T00:15:00");
@@ -625,7 +1090,9 @@ const startDate =
 
 function updateCounter() {
 
-    const now = new Date();
+    const now =
+        new Date();
+
 
     const difference =
         now - startDate;
@@ -659,7 +1126,9 @@ function updateCounter() {
         );
 
 
-    document.getElementById("counter").innerHTML =
+    document.getElementById(
+        "counter"
+    ).innerHTML =
 
         days +
         " days, " +
@@ -676,16 +1145,556 @@ function updateCounter() {
 }
 
 
-setInterval(updateCounter, 1000);
+setInterval(
+    updateCounter,
+    1000
+);
 
 updateCounter();
 
 
 
+/* =========================
+   LOCATION DATA
+========================= */
+
+const locations = {
+
+    london: {
+
+        name:
+            "London, UK 🇬🇧",
+
+        lat:
+            51.5074,
+
+        lon:
+            -0.1278
+
+    },
+
+
+    vienna: {
+
+        name:
+            "Vienna, Austria 🇦🇹",
+
+        lat:
+            48.2082,
+
+        lon:
+            16.3738
+
+    },
+
+
+    ottawa: {
+
+        name:
+            "Ottawa, Canada 🇨🇦",
+
+        lat:
+            45.4215,
+
+        lon:
+            -75.6972
+
+    }
+
+};
+
+
+/* =========================
+   FIXED OTTAWA LOCATION
+========================= */
+
+const herLocation =
+    locations.ottawa;
+
+
+/* =========================
+   SCHEDULE
+========================= */
+
+/*
+
+    UK TIME
+
+    London:
+    Aug 24 → Aug 25 at 3:00 PM
+
+    Vienna:
+    Aug 25 at 3:00 PM
+    →
+    Aug 29 at 11:00 AM
+
+    London:
+    Aug 29 at 11:00 AM
+    →
+    Aug 30 at 12:45 PM
+
+    Ottawa:
+    Aug 30 at 12:45 PM
+    → onward
+
+*/
+
+
+const viennaStart =
+    Date.parse(
+        "2026-08-25T15:00:00+01:00"
+    );
+
+
+const londonAgainStart =
+    Date.parse(
+        "2026-08-29T11:00:00+01:00"
+    );
+
+
+const ottawaStart =
+    Date.parse(
+        "2026-08-30T12:45:00+01:00"
+    );
+
+
+/* HOME TIME */
+
+const homeTime =
+    Date.parse(
+        "2026-08-30T13:00:00+01:00"
+    );
+
+
+
+function getScheduledLocation() {
+
+    const now =
+        Date.now();
+
+
+    if(now < viennaStart) {
+
+        return {
+
+            location:
+                locations.london,
+
+            nextChange:
+                viennaStart,
+
+            nextName:
+                "Vienna 🇦🇹"
+
+        };
+
+    }
+
+
+    if(now < londonAgainStart) {
+
+        return {
+
+            location:
+                locations.vienna,
+
+            nextChange:
+                londonAgainStart,
+
+            nextName:
+                "London 🇬🇧"
+
+        };
+
+    }
+
+
+    if(now < ottawaStart) {
+
+        return {
+
+            location:
+                locations.london,
+
+            nextChange:
+                ottawaStart,
+
+            nextName:
+                "Ottawa 🇨🇦"
+
+        };
+
+    }
+
+
+    return {
+
+        location:
+            locations.ottawa,
+
+        nextChange:
+            null,
+
+        nextName:
+            null
+
+    };
+
+}
+
+
+
+/* =========================
+   DISTANCE CALCULATOR
+========================= */
+
+function calculateDistance(
+    lat1,
+    lon1,
+    lat2,
+    lon2
+) {
+
+    const earthRadius =
+        6371;
+
+
+    const dLat =
+        (lat2 - lat1)
+        * Math.PI / 180;
+
+
+    const dLon =
+        (lon2 - lon1)
+        * Math.PI / 180;
+
+
+    const a =
+
+        Math.sin(dLat / 2) *
+        Math.sin(dLat / 2)
+
+        +
+
+        Math.cos(
+            lat1 * Math.PI / 180
+        )
+
+        *
+
+        Math.cos(
+            lat2 * Math.PI / 180
+        )
+
+        *
+
+        Math.sin(dLon / 2) *
+        Math.sin(dLon / 2);
+
+
+    const c =
+
+        2 *
+
+        Math.atan2(
+            Math.sqrt(a),
+            Math.sqrt(1 - a)
+        );
+
+
+    return Math.round(
+        earthRadius * c
+    );
+
+}
+
+
+
+/* =========================
+   LOCATION UPDATE
+========================= */
+
+function updateLocation() {
+
+    const current =
+        getScheduledLocation();
+
+
+    const location =
+        current.location;
+
+
+    document.getElementById(
+        "currentLocation"
+    ).innerHTML =
+        location.name;
+
+
+    const distance =
+        calculateDistance(
+
+            herLocation.lat,
+
+            herLocation.lon,
+
+            location.lat,
+
+            location.lon
+
+        );
+
+
+    document.getElementById(
+        "distance"
+    ).innerHTML =
+
+        "📏 You two are approximately " +
+
+        distance +
+
+        " km apart ❤️";
+
+
+    if(current.nextChange) {
+
+        updateLocationCountdown(
+            current
+        );
+
+    }
+
+    else {
+
+        document.getElementById(
+            "locationCountdown"
+        ).innerHTML =
+
+            "❤️ I'm staying in Ottawa until I change my schedule.";
+
+    }
+
+}
+
+
+
+/* =========================
+   LOCATION COUNTDOWN
+========================= */
+
+function updateLocationCountdown(
+    current
+) {
+
+    const remaining =
+        current.nextChange -
+        Date.now();
+
+
+    if(remaining <= 0) {
+
+        updateLocation();
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(
+            remaining /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (
+                remaining %
+                (1000 * 60 * 60 * 24)
+            )
+            /
+            (1000 * 60 * 60)
+        );
+
+
+    const minutes =
+        Math.floor(
+            (
+                remaining %
+                (1000 * 60 * 60)
+            )
+            /
+            (1000 * 60)
+        );
+
+
+    const seconds =
+        Math.floor(
+            (
+                remaining %
+                (1000 * 60)
+            )
+            /
+            1000
+        );
+
+
+    document.getElementById(
+        "locationCountdown"
+    ).innerHTML =
+
+        "⏰ Next location: " +
+
+        current.nextName +
+
+        "<br>" +
+
+        "in " +
+
+        days +
+
+        "d " +
+
+        hours +
+
+        "h " +
+
+        minutes +
+
+        "m " +
+
+        seconds +
+
+        "s";
+
+}
+
+
+
+/* =========================
+   HOME COUNTDOWN
+========================= */
+
+function updateHomeCountdown() {
+
+    const now =
+        Date.now();
+
+
+    const remaining =
+        homeTime - now;
+
+
+    const element =
+        document.getElementById(
+            "homeCountdown"
+        );
+
+
+    if(remaining <= 0) {
+
+        element.innerHTML =
+
+            "🏠 I'M HOME IN YOUR ARMS ❤️";
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(
+            remaining /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (
+                remaining %
+                (1000 * 60 * 60 * 24)
+            )
+            /
+            (1000 * 60 * 60)
+        );
+
+
+    const minutes =
+        Math.floor(
+            (
+                remaining %
+                (1000 * 60 * 60)
+            )
+            /
+            (1000 * 60)
+        );
+
+
+    const seconds =
+        Math.floor(
+            (
+                remaining %
+                (1000 * 60)
+            )
+            /
+            1000
+        );
+
+
+    element.innerHTML =
+
+        days +
+
+        " days, " +
+
+        hours +
+
+        " hours, " +
+
+        minutes +
+
+        " minutes, " +
+
+        seconds +
+
+        " seconds ❤️";
+
+}
+
+
+setInterval(
+    updateHomeCountdown,
+    1000
+);
+
+updateHomeCountdown();
+
+
+
+/* =========================
+   LOCATION TIMER
+========================= */
+
+setInterval(
+    updateLocation,
+    1000
+);
+
+updateLocation();
+
+
+
+/* =========================
+   PASSWORD
+========================= */
+
 function unlock() {
 
     const password =
-        document.getElementById("password").value;
+        document.getElementById(
+            "password"
+        ).value;
 
 
     const correctPassword =
@@ -694,12 +1703,16 @@ function unlock() {
 
     if(password === correctPassword) {
 
-        document.getElementById("login")
-            .style.display = "none";
+        document.getElementById(
+            "login"
+        ).style.display =
+            "none";
 
 
-        document.getElementById("secret")
-            .style.display = "block";
+        document.getElementById(
+            "secret"
+        ).style.display =
+            "block";
 
 
         startAnimations();
@@ -708,8 +1721,10 @@ function unlock() {
 
     else {
 
-        document.getElementById("error")
-            .innerHTML =
+        document.getElementById(
+            "error"
+        ).innerHTML =
+
             "❌ Incorrect password";
 
     }
@@ -718,22 +1733,30 @@ function unlock() {
 
 
 
+/* =========================
+   FLOATING HEARTS
+========================= */
 
 function createHeart() {
 
     const heart =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
 
-    heart.className = "heart";
+    heart.className =
+        "heart";
 
 
     const hearts = [
+
         "❤️",
         "💖",
         "💕",
         "💗",
         "💓"
+
     ];
 
 
@@ -747,18 +1770,32 @@ function createHeart() {
 
 
     heart.style.left =
-        Math.random() * 100 + "vw";
+        Math.random() *
+        100 +
+        "vw";
 
 
     heart.style.fontSize =
-        (20 + Math.random() * 20) + "px";
+        (
+            20 +
+            Math.random() *
+            20
+        ) +
+        "px";
 
 
     heart.style.animationDuration =
-        (5 + Math.random() * 5) + "s";
+        (
+            5 +
+            Math.random() *
+            5
+        ) +
+        "s";
 
 
-    document.body.appendChild(heart);
+    document.body.appendChild(
+        heart
+    );
 
 
     setTimeout(
@@ -770,32 +1807,53 @@ function createHeart() {
 
 
 
+/* =========================
+   ROSE PETALS
+========================= */
 
 function createPetal() {
 
     const petal =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
 
-    petal.className = "petal";
+    petal.className =
+        "petal";
 
 
-    petal.innerHTML = "🌹";
+    petal.innerHTML =
+        "🌹";
 
 
     petal.style.left =
-        Math.random() * 100 + "vw";
+        Math.random() *
+        100 +
+        "vw";
 
 
     petal.style.fontSize =
-        (20 + Math.random() * 15) + "px";
+        (
+            20 +
+            Math.random() *
+            15
+        ) +
+        "px";
 
 
     petal.style.animationDuration =
-        (7 + Math.random() * 5) + "s";
+        (
+            7 +
+            Math.random() *
+            5
+        ) +
+        "s";
 
 
-    document.body.appendChild(petal);
+    document.body.appendChild(
+        petal
+    );
 
 
     setTimeout(
@@ -807,8 +1865,12 @@ function createPetal() {
 
 
 
+/* =========================
+   START ANIMATIONS
+========================= */
 
-let animationsStarted = false;
+let animationsStarted =
+    false;
 
 
 function startAnimations() {
@@ -817,7 +1879,8 @@ function startAnimations() {
         return;
 
 
-    animationsStarted = true;
+    animationsStarted =
+        true;
 
 
     setInterval(
@@ -835,21 +1898,28 @@ function startAnimations() {
 
 
 
+/* =========================
+   MOVING LOVE BUTTON
+========================= */
+
 let attempts = 0;
 
 
 function moveLoveButton() {
 
     const button =
-        document.getElementById("loveButton");
+        document.getElementById(
+            "loveButton"
+        );
 
 
     const game =
-        document.getElementById("loveGame");
+        document.getElementById(
+            "loveGame"
+        );
 
 
     attempts++;
-
 
 
     if(attempts >= 6) {
@@ -857,12 +1927,18 @@ function moveLoveButton() {
         button.innerHTML =
             "Okay okay... click me ❤️";
 
+
         button.style.position =
             "relative";
 
-        button.style.left = "auto";
 
-        button.style.top = "auto";
+        button.style.left =
+            "auto";
+
+
+        button.style.top =
+            "auto";
+
 
         return;
 
@@ -870,25 +1946,35 @@ function moveLoveButton() {
 
 
     const maxX =
+
         game.clientWidth -
         button.offsetWidth -
         10;
 
 
     const maxY =
+
         game.clientHeight -
         button.offsetHeight -
         20;
 
 
     const randomX =
+
         Math.random() *
-        Math.max(maxX, 10);
+        Math.max(
+            maxX,
+            10
+        );
 
 
     const randomY =
+
         Math.random() *
-        Math.max(maxY, 10);
+        Math.max(
+            maxY,
+            10
+        );
 
 
     button.style.position =
@@ -896,16 +1982,19 @@ function moveLoveButton() {
 
 
     button.style.left =
-        randomX + "px";
+        randomX +
+        "px";
 
 
     button.style.top =
-        randomY + "px";
+        randomY +
+        "px";
 
 }
 
 
 
+/* COMPUTER */
 
 document.getElementById(
     "loveButton"
@@ -915,6 +2004,8 @@ document.getElementById(
 );
 
 
+
+/* PHONE */
 
 document.getElementById(
     "loveButton"
@@ -935,20 +2026,29 @@ document.getElementById(
 
 
 
+/* =========================
+   LOVE SUCCESS
+========================= */
 
 function loveClicked() {
 
     document.getElementById(
         "loveGame"
-    ).style.display = "none";
+    ).style.display =
+        "none";
 
 
     document.getElementById(
         "loveResult"
-    ).style.display = "block";
+    ).style.display =
+        "block";
 
 
-  
+    document.getElementById(
+        "secretPageButton"
+    ).style.display =
+        "inline-block";
+
 
     for(
         let i = 0;
@@ -964,6 +2064,38 @@ function loveClicked() {
     }
 
 }
+
+
+
+/* =========================
+   SECRET PAGE
+========================= */
+
+function openHiddenPage() {
+
+    document.getElementById(
+        "hiddenPage"
+    ).style.display =
+        "block";
+
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+}
+
+
+function closeHiddenPage() {
+
+    document.getElementById(
+        "hiddenPage"
+    ).style.display =
+        "none";
+
+}
+
 
 </script>
 
