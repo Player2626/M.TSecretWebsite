@@ -1,15 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>For My Love ❤️</title>
-
+<title>For Melanie ❤️</title>
 
 <style>
 
@@ -26,40 +24,29 @@ html {
 }
 
 body {
-
     margin: 0;
-
     min-height: 100vh;
-
     padding: 15px;
 
     display: flex;
-
     justify-content: center;
-
     align-items: flex-start;
 
     overflow-x: hidden;
-
     overflow-y: auto;
 
     font-family: Arial, sans-serif;
-
     color: white;
 
-    background:
-        linear-gradient(
-            135deg,
-            #7f1d1d,
-            #991b1b,
-            #450a0a
-        );
+    background: linear-gradient(
+        135deg,
+        #7f1d1d,
+        #991b1b,
+        #450a0a
+    );
 
     background-size: 300% 300%;
-
-    animation:
-        backgroundMove 12s infinite alternate;
-
+    animation: backgroundMove 12s infinite alternate;
 }
 
 @keyframes backgroundMove {
@@ -71,7 +58,6 @@ body {
     100% {
         background-position: 100% 50%;
     }
-
 }
 
 
@@ -80,22 +66,17 @@ body {
 ========================= */
 
 .container {
-
     width: 100%;
-
     max-width: 750px;
 
     margin: 20px auto;
-
     padding: 30px;
 
-    background:
-        rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.12);
 
     border-radius: 25px;
 
     backdrop-filter: blur(12px);
-
     -webkit-backdrop-filter: blur(12px);
 
     text-align: center;
@@ -104,9 +85,7 @@ body {
         0 0 30px rgba(0,0,0,0.6);
 
     position: relative;
-
     z-index: 5;
-
 }
 
 
@@ -115,22 +94,15 @@ body {
 ========================= */
 
 #login {
-
     padding: 20px 5px;
-
 }
 
 #login h2 {
-
-    font-size:
-        clamp(25px, 7vw, 35px);
-
+    font-size: clamp(25px, 7vw, 35px);
 }
 
 input {
-
     width: 90%;
-
     max-width: 350px;
 
     padding: 13px;
@@ -138,24 +110,19 @@ input {
     font-size: 18px;
 
     border: none;
-
     border-radius: 10px;
 
     outline: none;
 
     text-align: center;
-
 }
 
-
 button {
-
     padding: 13px 25px;
 
     margin-top: 12px;
 
     border: none;
-
     border-radius: 10px;
 
     font-size: 18px;
@@ -163,26 +130,19 @@ button {
     cursor: pointer;
 
     background: #22c55e;
-
     color: white;
 
     transition:
         transform 0.2s,
         opacity 0.2s;
-
 }
 
 button:hover {
-
     transform: scale(1.05);
-
 }
 
-
 #error {
-
     color: #ffaaaa;
-
 }
 
 
@@ -191,32 +151,21 @@ button:hover {
 ========================= */
 
 #secret {
-
     display: none;
-
-    animation:
-        appear 2s;
-
+    animation: appear 2s;
 }
 
 @keyframes appear {
 
     from {
-
         opacity: 0;
-
         transform: scale(0.5);
-
     }
 
     to {
-
         opacity: 1;
-
         transform: scale(1);
-
     }
-
 }
 
 
@@ -225,31 +174,22 @@ button:hover {
 ========================= */
 
 .big-heart {
+    font-size: clamp(80px, 25vw, 150px);
 
-    font-size:
-        clamp(80px, 25vw, 150px);
-
-    animation:
-        heartbeat 1.5s infinite;
+    animation: heartbeat 1.5s infinite;
 
     margin: 10px;
-
 }
 
 @keyframes heartbeat {
 
     0%, 100% {
-
         transform: scale(1);
-
     }
 
     50% {
-
         transform: scale(1.15);
-
     }
-
 }
 
 
@@ -258,17 +198,11 @@ button:hover {
 ========================= */
 
 h1 {
-
-    font-size:
-        clamp(30px, 8vw, 50px);
-
+    font-size: clamp(30px, 8vw, 50px);
 }
 
 h2 {
-
-    font-size:
-        clamp(22px, 6vw, 32px);
-
+    font-size: clamp(22px, 6vw, 32px);
 }
 
 
@@ -277,21 +211,18 @@ h2 {
 ========================= */
 
 #counter {
-
-    font-size:
-        clamp(18px, 5vw, 25px);
+    font-size: clamp(18px, 5vw, 25px);
 
     font-weight: bold;
 
     line-height: 1.6;
 
     margin: 20px 0;
-
 }
 
 
 /* =========================
-   LOCATION BOX
+   LOCATION
 ========================= */
 
 .location-box {
@@ -304,15 +235,11 @@ h2 {
 
     background:
         rgba(255,255,255,0.10);
-
 }
 
 .location-title {
-
     font-size: 18px;
-
     margin-bottom: 10px;
-
 }
 
 #currentLocation {
@@ -323,7 +250,6 @@ h2 {
     font-weight: bold;
 
     margin: 10px 0;
-
 }
 
 #distance {
@@ -334,7 +260,6 @@ h2 {
     margin-top: 15px;
 
     font-weight: bold;
-
 }
 
 #locationCountdown {
@@ -346,7 +271,6 @@ h2 {
     margin-top: 12px;
 
     line-height: 1.5;
-
 }
 
 
@@ -364,7 +288,6 @@ h2 {
 
     background:
         rgba(255,255,255,0.12);
-
 }
 
 .home-title {
@@ -373,7 +296,6 @@ h2 {
         clamp(22px, 6vw, 30px);
 
     font-weight: bold;
-
 }
 
 #homeCountdown {
@@ -386,7 +308,6 @@ h2 {
     line-height: 1.6;
 
     margin-top: 10px;
-
 }
 
 
@@ -405,7 +326,6 @@ h2 {
     position: relative;
 
     overflow: hidden;
-
 }
 
 #loveQuestion {
@@ -414,7 +334,6 @@ h2 {
         clamp(24px, 7vw, 36px);
 
     margin-bottom: 30px;
-
 }
 
 #loveButton {
@@ -424,7 +343,6 @@ h2 {
     position: relative;
 
     z-index: 10;
-
 }
 
 
@@ -438,29 +356,20 @@ h2 {
 
     animation:
         resultAppear 2s;
-
 }
 
 @keyframes resultAppear {
 
     0% {
-
         opacity: 0;
-
         transform: scale(0.5);
-
     }
 
     100% {
-
         opacity: 1;
-
         transform: scale(1);
-
     }
-
 }
-
 
 .distance {
 
@@ -476,7 +385,6 @@ h2 {
     font-size: 20px;
 
     line-height: 1.7;
-
 }
 
 
@@ -490,33 +398,26 @@ h2 {
 
     margin-top: 30px;
 
-    background:
-        #1e40af;
+    background: #1e40af;
 
     animation:
         secretPulse 2s infinite;
-
 }
 
 @keyframes secretPulse {
 
     0%, 100% {
-
         transform: scale(1);
-
     }
 
     50% {
-
         transform: scale(1.05);
-
     }
-
 }
 
 
 /* =========================
-   SECRET NAVY PAGE
+   NAVY SECRET PAGE
 ========================= */
 
 #hiddenPage {
@@ -545,29 +446,20 @@ h2 {
 
     animation:
         hiddenPageAppear 1s;
-
 }
 
 @keyframes hiddenPageAppear {
 
     from {
-
         opacity: 0;
-
         transform: scale(1.1);
-
     }
 
     to {
-
         opacity: 1;
-
         transform: scale(1);
-
     }
-
 }
-
 
 .hidden-content {
 
@@ -588,9 +480,7 @@ h2 {
         0 0 40px rgba(0,0,0,0.7);
 
     text-align: center;
-
 }
-
 
 .hidden-heart {
 
@@ -599,33 +489,24 @@ h2 {
 
     animation:
         hiddenHeartBeat 2s infinite;
-
 }
 
 @keyframes hiddenHeartBeat {
 
     0%, 100% {
-
         transform: scale(1);
-
     }
 
     50% {
-
         transform: scale(1.1);
-
     }
-
 }
-
 
 .hidden-content h1 {
 
     font-size:
         clamp(28px, 8vw, 48px);
-
 }
-
 
 .hidden-content p {
 
@@ -633,17 +514,126 @@ h2 {
         clamp(18px, 5vw, 24px);
 
     line-height: 1.7;
-
 }
-
 
 #getOut {
 
     margin-top: 30px;
 
-    background:
-        #334155;
+    background: #334155;
+}
 
+
+/* =========================
+   WORDLE
+========================= */
+
+#miniWordle {
+
+    margin-top: 50px;
+
+    padding: 25px 15px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.06);
+}
+
+#miniWordle h2 {
+
+    font-size:
+        clamp(23px, 6vw, 32px);
+}
+
+#miniWordle p {
+
+    font-size: 18px;
+}
+
+#wordleBoard {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 45px);
+
+    gap: 6px;
+
+    justify-content: center;
+
+    margin: 25px auto;
+}
+
+.wordleTile {
+
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid
+        rgba(255,255,255,0.5);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    text-transform: uppercase;
+}
+
+.wordleCorrect {
+
+    background: #22c55e;
+
+    border-color: #22c55e;
+}
+
+.wordleWrongPlace {
+
+    background: #eab308;
+
+    border-color: #eab308;
+}
+
+.wordleWrong {
+
+    background: #475569;
+
+    border-color: #475569;
+}
+
+#wordleInput {
+
+    width: 200px;
+
+    max-width: 80%;
+
+    padding: 10px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    border-radius: 8px;
+
+    border: none;
+
+    font-size: 18px;
+}
+
+#wordleMessage {
+
+    font-size: 18px;
+
+    min-height: 30px;
+
+    margin-top: 15px;
 }
 
 
@@ -659,7 +649,6 @@ h2 {
     pointer-events: none;
 
     z-index: 1;
-
 }
 
 .heart {
@@ -668,7 +657,6 @@ h2 {
 
     animation:
         heartFloat linear forwards;
-
 }
 
 @keyframes heartFloat {
@@ -680,7 +668,6 @@ h2 {
             rotate(0deg);
 
         opacity: 1;
-
     }
 
     100% {
@@ -690,9 +677,7 @@ h2 {
             rotate(360deg);
 
         opacity: 0;
-
     }
-
 }
 
 
@@ -706,7 +691,6 @@ h2 {
 
     animation:
         petalFall linear forwards;
-
 }
 
 @keyframes petalFall {
@@ -718,7 +702,6 @@ h2 {
             rotate(0deg);
 
         opacity: 1;
-
     }
 
     100% {
@@ -729,22 +712,18 @@ h2 {
             rotate(540deg);
 
         opacity: 0;
-
     }
-
 }
 
 
 /* =========================
-   PHONE
+   MOBILE
 ========================= */
 
 @media(max-width:600px) {
 
     body {
-
         padding: 8px;
-
     }
 
     .container {
@@ -753,13 +732,25 @@ h2 {
             20px 15px;
 
         margin-top: 10px;
-
     }
 
     #loveGame {
-
         min-height: 350px;
+    }
 
+    #wordleBoard {
+
+        grid-template-columns:
+            repeat(5, 42px);
+
+        gap: 5px;
+    }
+
+    .wordleTile {
+
+        width: 42px;
+
+        height: 42px;
     }
 
 }
@@ -773,13 +764,10 @@ h2 {
 
 
 <!-- =========================
-     MAIN WEBSITE
+     PASSWORD
 ========================= -->
 
 <div class="container">
-
-
-    <!-- PASSWORD -->
 
     <div id="login">
 
@@ -814,53 +802,36 @@ h2 {
     </div>
 
 
-
-    <!-- MAIN CONTENT -->
+    <!-- =========================
+         MAIN RED PAGE
+    ========================= -->
 
     <div id="secret">
 
-
         <div class="big-heart">
-
             ❤️
-
         </div>
 
-
         <h1>
-
-            Heyyyyy Beautiful ❤️
-
+            Heyyyyy my Sexy Beautiful Loving Angel ❤️
         </h1>
 
-
         <h2>
-
             Your Husband here 👋
-
         </h2>
 
-
         <p>
-
-            I made this little page
-            just for you.
-
+            I made this little page just for you.
         </p>
-
 
 
         <!-- RELATIONSHIP TIMER -->
 
         <h3>
-
             We've been together for:
-
         </h3>
 
-
         <div id="counter"></div>
-
 
 
         <!-- LOCATION -->
@@ -868,32 +839,21 @@ h2 {
         <div class="location-box">
 
             <div class="location-title">
-
-                📍 My current scheduled location
-
+                📍 Where I am right now
             </div>
-
 
             <div id="currentLocation">
-
                 Checking...
-
             </div>
-
 
             <div id="distance">
-
-                Calculating distance... ❤️
-
+                Calculating...
             </div>
 
-
             <div id="locationCountdown">
-
             </div>
 
         </div>
-
 
 
         <!-- HOME COUNTDOWN -->
@@ -901,20 +861,14 @@ h2 {
         <div class="home-box">
 
             <div class="home-title">
-
                 🏠 Time until I'm home in your arms ❤️
-
             </div>
 
-
             <div id="homeCountdown">
-
                 Calculating...
-
             </div>
 
         </div>
-
 
 
         <!-- LOVE GAME -->
@@ -922,11 +876,8 @@ h2 {
         <div id="loveGame">
 
             <div id="loveQuestion">
-
                 💕 Do you love me? 💕
-
             </div>
-
 
             <button
                 id="loveButton"
@@ -940,32 +891,21 @@ h2 {
         </div>
 
 
-
         <!-- LOVE RESULT -->
 
         <div id="loveResult">
 
-
             <div class="big-heart">
-
                 ❤️
-
             </div>
 
-
             <h1>
-
                 WOW, YOU DO LOVE ME! 😭❤️
-
             </h1>
 
-
             <h2>
-
                 I KNEW IT! 😂💕
-
             </h2>
-
 
             <div class="distance">
 
@@ -973,26 +913,19 @@ h2 {
 
                 <br><br>
 
-                you're always close to my heart. ❤️
+                I'm always thinking about you. ❤️
+
+                <br><br>
+
+                I love you more than all
+                the distance between us.❤️
+                I want you to know you're perfect in everyway imaginable.
+                I'm truly even blessed to even be in your life, and i'm NEVER LEAVING (Dont be mad)!
+                It honestly pains me so much to not be in your arms right now or 
+                cuddling in bed while talking to each other or something a little more Sexyyy, but until then
+                I'll fill you in on a little reminder I LOOOOOOOOOOOOOOVVVVVVE YOUUUUUUUUUUUUU SOOO MUCCCHH!❤️
 
             </div>
-
-
-            <p>
-
-                I love you more than all the
-                distance between us. ❤️
-                I want you to know you're perfect in everyway.
-                I'm truly blessed to even be in your life, and i am NEVER leaving!
-                It pains me to not be in your arms right now or us cuddling in bed, 
-                but i'll fill you in on a little reminder. 
-                I LOOOOOOOOOOVVVE YOUUUUUUUUUUU!
-                
-
-            </p>
-
-
-            <!-- SECRET PAGE -->
 
             <button
                 id="secretPageButton"
@@ -1003,61 +936,75 @@ h2 {
 
             </button>
 
-
         </div>
 
-
     </div>
-
 
 </div>
 
 
-
 <!-- =========================
-     HIDDEN NAVY PAGE
+     NAVY SECRET PAGE
 ========================= -->
 
 <div id="hiddenPage">
 
-
     <div class="hidden-content">
 
-
         <div class="hidden-heart">
-
             🫣
-
         </div>
 
-
         <h1>
-
-            Hey my princess 🫣❤️
-
+            Hey my princess ❤️
         </h1>
 
-
         <p>
-
-            You weren't supposed
-            to find this yet...
-
+            You weren't supposed to find this yet...
         </p>
 
-
         <h2>
-
-            🫣 Surprise coming soon ❤️
-
+            🫣 Surprise coming soon ❤️. In the mean time i'll add a little game you can play every day.
+            I made this in a coding project in Web programming, had to do some research and ask AI how to improve
+            it to be multi platform for you to use on any device let me know if you like it. 
         </h2>
 
 
-        <p>
+        <!-- =========================
+             WORDLE
+        ========================= -->
 
-            Get out of here! 😂
+        <div id="miniWordle">
 
-        </p>
+            <h2>
+                💙 A Little Game For You 🫣
+            </h2>
+
+            <p>
+                Guess my secret word ❤️
+            </p>
+
+            <div id="wordleBoard"></div>
+
+            <input
+                type="text"
+                id="wordleInput"
+                maxlength="5"
+                placeholder="5 letters"
+                autocomplete="off"
+            >
+
+            <br>
+
+            <button onclick="checkWordleGuess()">
+
+                Guess ❤️
+
+            </button>
+
+            <p id="wordleMessage"></p>
+
+        </div>
 
 
         <button
@@ -1069,12 +1016,9 @@ h2 {
 
         </button>
 
-
     </div>
 
-
 </div>
-
 
 
 <script>
@@ -1093,10 +1037,8 @@ function updateCounter() {
     const now =
         new Date();
 
-
     const difference =
         now - startDate;
-
 
     const days =
         Math.floor(
@@ -1104,13 +1046,11 @@ function updateCounter() {
             (1000 * 60 * 60 * 24)
         );
 
-
     const hours =
         Math.floor(
             (difference /
             (1000 * 60 * 60)) % 24
         );
-
 
     const minutes =
         Math.floor(
@@ -1118,13 +1058,11 @@ function updateCounter() {
             (1000 * 60)) % 60
         );
 
-
     const seconds =
         Math.floor(
             (difference /
             1000) % 60
         );
-
 
     document.getElementById(
         "counter"
@@ -1141,9 +1079,7 @@ function updateCounter() {
 
         seconds +
         " seconds ❤️";
-
 }
-
 
 setInterval(
     updateCounter,
@@ -1153,9 +1089,8 @@ setInterval(
 updateCounter();
 
 
-
 /* =========================
-   LOCATION DATA
+   LOCATIONS
 ========================= */
 
 const locations = {
@@ -1173,7 +1108,6 @@ const locations = {
 
     },
 
-
     vienna: {
 
         name:
@@ -1186,7 +1120,6 @@ const locations = {
             16.3738
 
     },
-
 
     ottawa: {
 
@@ -1204,53 +1137,27 @@ const locations = {
 };
 
 
-/* =========================
-   FIXED OTTAWA LOCATION
-========================= */
+/*
+    Melanie is in Ottawa.
+*/
 
 const herLocation =
     locations.ottawa;
 
 
 /* =========================
-   SCHEDULE
+   YOUR SCHEDULE
 ========================= */
-
-/*
-
-    UK TIME
-
-    London:
-    Aug 24 → Aug 25 at 3:00 PM
-
-    Vienna:
-    Aug 25 at 3:00 PM
-    →
-    Aug 29 at 11:00 AM
-
-    London:
-    Aug 29 at 11:00 AM
-    →
-    Aug 30 at 12:45 PM
-
-    Ottawa:
-    Aug 30 at 12:45 PM
-    → onward
-
-*/
-
 
 const viennaStart =
     Date.parse(
         "2026-08-25T15:00:00+01:00"
     );
 
-
 const londonAgainStart =
     Date.parse(
         "2026-08-29T11:00:00+01:00"
     );
-
 
 const ottawaStart =
     Date.parse(
@@ -1258,13 +1165,14 @@ const ottawaStart =
     );
 
 
-/* HOME TIME */
+/* =========================
+   HOME TIME
+========================= */
 
 const homeTime =
     Date.parse(
         "2026-08-30T13:00:00+01:00"
     );
-
 
 
 function getScheduledLocation() {
@@ -1343,9 +1251,8 @@ function getScheduledLocation() {
 }
 
 
-
 /* =========================
-   DISTANCE CALCULATOR
+   DISTANCE
 ========================= */
 
 function calculateDistance(
@@ -1358,16 +1265,13 @@ function calculateDistance(
     const earthRadius =
         6371;
 
-
     const dLat =
         (lat2 - lat1)
         * Math.PI / 180;
 
-
     const dLon =
         (lon2 - lon1)
         * Math.PI / 180;
-
 
     const a =
 
@@ -1391,7 +1295,6 @@ function calculateDistance(
         Math.sin(dLon / 2) *
         Math.sin(dLon / 2);
 
-
     const c =
 
         2 *
@@ -1401,13 +1304,11 @@ function calculateDistance(
             Math.sqrt(1 - a)
         );
 
-
     return Math.round(
         earthRadius * c
     );
 
 }
-
 
 
 /* =========================
@@ -1418,7 +1319,6 @@ function updateLocation() {
 
     const current =
         getScheduledLocation();
-
 
     const location =
         current.location;
@@ -1444,15 +1344,31 @@ function updateLocation() {
         );
 
 
-    document.getElementById(
-        "distance"
-    ).innerHTML =
+    if(
+        location === locations.ottawa
+    ) {
 
-        "📏 You two are approximately " +
+        document.getElementById(
+            "distance"
+        ).innerHTML =
 
-        distance +
+            "❤️ I'm finally back in Ottawa — I'm " +
+            distance +
+            " km away from you.";
 
-        " km apart ❤️";
+    }
+
+    else {
+
+        document.getElementById(
+            "distance"
+        ).innerHTML =
+
+            "❤️ I'm currently " +
+            distance +
+            " km away from you.";
+
+    }
 
 
     if(current.nextChange) {
@@ -1469,12 +1385,11 @@ function updateLocation() {
             "locationCountdown"
         ).innerHTML =
 
-            "❤️ I'm staying in Ottawa until I change my schedule.";
+            "❤️ I'm staying in Ottawa with you Baby";
 
     }
 
 }
-
 
 
 /* =========================
@@ -1543,13 +1458,11 @@ function updateLocationCountdown(
         "locationCountdown"
     ).innerHTML =
 
-        "⏰ Next location: " +
+        "⏰ I'm heading to " +
 
         current.nextName +
 
-        "<br>" +
-
-        "in " +
+        " in " +
 
         days +
 
@@ -1570,20 +1483,15 @@ function updateLocationCountdown(
 }
 
 
-
 /* =========================
    HOME COUNTDOWN
 ========================= */
 
 function updateHomeCountdown() {
 
-    const now =
-        Date.now();
-
-
     const remaining =
-        homeTime - now;
-
+        homeTime -
+        Date.now();
 
     const element =
         document.getElementById(
@@ -1645,23 +1553,18 @@ function updateHomeCountdown() {
     element.innerHTML =
 
         days +
-
         " days, " +
 
         hours +
-
         " hours, " +
 
         minutes +
-
         " minutes, " +
 
         seconds +
-
         " seconds ❤️";
 
 }
-
 
 setInterval(
     updateHomeCountdown,
@@ -1669,7 +1572,6 @@ setInterval(
 );
 
 updateHomeCountdown();
-
 
 
 /* =========================
@@ -1682,7 +1584,6 @@ setInterval(
 );
 
 updateLocation();
-
 
 
 /* =========================
@@ -1724,13 +1625,11 @@ function unlock() {
         document.getElementById(
             "error"
         ).innerHTML =
-
             "❌ Incorrect password";
 
     }
 
 }
-
 
 
 /* =========================
@@ -1806,7 +1705,6 @@ function createHeart() {
 }
 
 
-
 /* =========================
    ROSE PETALS
 ========================= */
@@ -1864,7 +1762,6 @@ function createPetal() {
 }
 
 
-
 /* =========================
    START ANIMATIONS
 ========================= */
@@ -1895,7 +1792,6 @@ function startAnimations() {
     );
 
 }
-
 
 
 /* =========================
@@ -1946,21 +1842,18 @@ function moveLoveButton() {
 
 
     const maxX =
-
         game.clientWidth -
         button.offsetWidth -
         10;
 
 
     const maxY =
-
         game.clientHeight -
         button.offsetHeight -
         20;
 
 
     const randomX =
-
         Math.random() *
         Math.max(
             maxX,
@@ -1969,7 +1862,6 @@ function moveLoveButton() {
 
 
     const randomY =
-
         Math.random() *
         Math.max(
             maxY,
@@ -1993,7 +1885,6 @@ function moveLoveButton() {
 }
 
 
-
 /* COMPUTER */
 
 document.getElementById(
@@ -2002,7 +1893,6 @@ document.getElementById(
     "mouseenter",
     moveLoveButton
 );
-
 
 
 /* PHONE */
@@ -2023,7 +1913,6 @@ document.getElementById(
 
     }
 );
-
 
 
 /* =========================
@@ -2066,7 +1955,6 @@ function loveClicked() {
 }
 
 
-
 /* =========================
    SECRET PAGE
 ========================= */
@@ -2097,8 +1985,258 @@ function closeHiddenPage() {
 }
 
 
+/* =====================================================
+   WORDLE-Secret word is the wordle word to change(MUST BE 5 LETTERS)
+===================================================== */
+
+
+
+
+const secretWord =
+    "Dovey";
+
+
+let wordleAttempts =
+    0;
+
+
+const maxWordleAttempts =
+    6;
+
+
+/* =========================
+   CREATE WORDLE BOARD
+========================= */
+
+function createWordleBoard() {
+
+    const board =
+        document.getElementById(
+            "wordleBoard"
+        );
+
+
+    board.innerHTML = "";
+
+
+    for(
+        let i = 0;
+
+        i <
+        maxWordleAttempts * 5;
+
+        i++
+    ) {
+
+        const tile =
+            document.createElement(
+                "div"
+            );
+
+
+        tile.className =
+            "wordleTile";
+
+
+        tile.id =
+            "wordleTile-" +
+            i;
+
+
+        board.appendChild(
+            tile
+        );
+
+    }
+
+}
+
+
+/* =========================
+   CHECK WORDLE GUESS
+========================= */
+
+function checkWordleGuess() {
+
+    const input =
+        document.getElementById(
+            "wordleInput"
+        );
+
+
+    const message =
+        document.getElementById(
+            "wordleMessage"
+        );
+
+
+    const guess =
+        input.value
+        .toUpperCase()
+        .trim();
+
+
+    const answer =
+        secretWord
+        .toUpperCase();
+
+
+    if(
+        guess.length !== 5
+    ) {
+
+        message.innerHTML =
+            "❤️ Enter exactly 5 letters.";
+
+        return;
+
+    }
+
+
+    if(
+        wordleAttempts >=
+        maxWordleAttempts
+    ) {
+
+        return;
+
+    }
+
+
+    const start =
+        wordleAttempts * 5;
+
+
+    for(
+        let i = 0;
+
+        i < 5;
+
+        i++
+    ) {
+
+        const tile =
+            document.getElementById(
+                "wordleTile-" +
+                (start + i)
+            );
+
+
+        tile.innerHTML =
+            guess[i];
+
+
+        if(
+            guess[i] ===
+            answer[i]
+        ) {
+
+            tile.classList.add(
+                "wordleCorrect"
+            );
+
+        }
+
+        else if(
+            answer.includes(
+                guess[i]
+            )
+        ) {
+
+            tile.classList.add(
+                "wordleWrongPlace"
+            );
+
+        }
+
+        else {
+
+            tile.classList.add(
+                "wordleWrong"
+            );
+
+        }
+
+    }
+
+
+    wordleAttempts++;
+
+
+    if(
+        guess === answer
+    ) {
+
+        message.innerHTML =
+            "😭❤️ YOU GOT IT! I LOVE YOU!";
+
+        input.disabled =
+            true;
+
+        return;
+
+    }
+
+
+    if(
+        wordleAttempts >=
+        maxWordleAttempts
+    ) {
+
+        message.innerHTML =
+            "🫣 You ran out of guesses...";
+
+        input.disabled =
+            true;
+
+        return;
+
+    }
+
+
+    message.innerHTML =
+        "Nope! Try again ❤️";
+
+
+    input.value = "";
+
+    input.focus();
+
+}
+
+
+/* =========================
+   CREATE WORDLE
+========================= */
+
+createWordleBoard();
+
+
+/* =========================
+   ENTER KEY
+========================= */
+
+document.getElementById(
+    "wordleInput"
+).addEventListener(
+    "keydown",
+    function(event) {
+
+        if(
+            event.key === "Enter"
+        ) {
+
+            checkWordleGuess();
+
+        }
+
+    }
+);
+
+
 </script>
 
 </body>
 
 </html>
+```
